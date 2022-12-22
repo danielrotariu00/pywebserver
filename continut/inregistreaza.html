@@ -1,0 +1,66 @@
+<h2>Întroduceți informațiile</h2>
+<form id="inregistrare_form" action="/api/utilizatori" method="post">
+  <fieldset>
+    <legend>Informații generale:</legend>
+
+    <label for="utilizator">Nume utilizator:</label>
+    <input type="text" id="utilizator" name="utilizator"><br/><br/>
+
+    <label for="parola">Parolă:</label>
+    <input type="password" id="parola" name="parola"><br/><br/>
+  
+    <label for="nume">Nume:</label>
+    <input type="text" id="nume" name="nume"><br/><br/>
+
+    <label for="prenume">Prenume:</label>
+    <input type="text" id="prenume" name="prenume"><br/><br/>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br/><br/>
+
+    <label for="telefon">Telefon:</label>
+    <input type="tel" id="telefon" name="telefon"><br/><br/>
+
+    <label for="data_nasterii">Zi de naștere:</label>
+    <input type="date" id="data_nasterii" name="data_nasterii"><br/><br/>
+
+  </fieldset>
+
+  <fieldset>
+      <legend>Informații personale:</legend>
+
+      <label for="sex_label">Sexul:</label>
+      <select id="sex_select" name="sexul" form="inregistrare_form" >
+          <option value="M">M</option>
+          <option value="F">F</option>
+      </select>
+      <br/><br/>
+
+      <label for="preferinte_label">Preferințe :</label>
+      <input list="preferinte_lista" name="preferinte" id="preferinte">
+      <datalist id="preferinte_lista">
+          <option value="Acțiuni">
+          <option value="ETF-uri">
+          <option value="Comodități">
+      </datalist>
+      <br/><br/>
+
+      <label for="culoare">Culoare preferată:</label>
+      <input type="color" id="culoare" name="culoare"><br/><br/>
+      
+      <label for="ora">Ora preferată pentru email-uri:</label>
+      <input type="time" id="ora" name="ora"><br/><br/>
+
+      <label for="experienta">Nivel Experiență (începător-expert):</label>
+      <input type="range" id="experienta" name="experienta"  min="0" max="10" ><br/><br/>
+
+      <label for="url">Link profil Facebook:</label>
+      <input type="url" id="url" name="url"><br/><br/>
+
+      <label for="observatii">Observații:</label>
+      <textarea id="observatii" name="observatii" rows="4" cols="50"></textarea><br/><br/>
+
+    </fieldset>
+  <br/> <br/>
+  <input type="submit" value="Înregistrează">
+</form>

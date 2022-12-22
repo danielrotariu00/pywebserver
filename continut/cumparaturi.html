@@ -1,0 +1,12 @@
+<h2>Cumpărați acțiuni</h2>
+<form>
+    Nume companie: <input type="text" id="numeCompanie" value="Amazon"><br/>
+    Numar acțiuni: <input type="text" id="numarActiuni" value="10"><br><br>
+    <input type="button" value="Adauga in Local Storage" onclick="adaugaTranzactie('localStorage')">
+    <input type="button" value="Adauga in IndexedDB" onclick="adaugaTranzactie('indexedDB')">
+</form>
+
+<h2>Tranzacții stocate în Local Storage</h2>
+<table id='tabel_cumparaturi_localstorage' class="tabel"></table>
+<h2>Tranzacții stocate în IndexedDB</h2>
+<table id='tabel_cumparaturi_indexeddb' class="tabel"></table>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE companii [
+<!ELEMENT companii (companie+)>
+<!ELEMENT companie (nume,abreviere,cotatie,informatii)>
+<!ATTLIST companie id CDATA #REQUIRED>
+<!ELEMENT nume (#PCDATA)>
+<!ELEMENT abreviere (#PCDATA)>
+<!ELEMENT cotatie (#PCDATA)>
+<!ELEMENT informatii (infiintare, sediu, venit, angajati)>
+<!ELEMENT infiintare (#PCDATA)>
+<!ELEMENT sediu (#PCDATA)>
+<!ELEMENT venit (#PCDATA)>
+<!ELEMENT angajati (#PCDATA)>
+]>
+<companii>
+    <companie id="1">
+        <nume>Tesla, Inc.</nume>
+        <abreviere>TSLA</abreviere>
+        <cotatie>821.53 USD</cotatie>
+        <informatii>
+            <infiintare>1 Iulie 2003</infiintare>
+            <sediu>Austin, Texas, Statele Unite</sediu>
+            <venit>53.82 miliarde USD</venit>
+            <angajati>99290</angajati>
+        </informatii>
+    </companie>
+    <companie id="2">
+        <nume>Google LLC</nume>
+        <abreviere>GOOG</abreviere>
+        <cotatie>2.588.05 USD</cotatie>
+        <informatii>
+            <infiintare>2 Octombrie 2015</infiintare>
+            <sediu>Mountain View, California, Statele Unite</sediu>
+            <venit>257.6 miliarde USD</venit>
+            <angajati>139995</angajati>
+        </informatii>
+    </companie>
+    <companie id="3">
+        <nume>Amazon.com</nume>
+        <abreviere>AMZN</abreviere>
+        <cotatie>3003.95 USD</cotatie>
+        <informatii>
+            <infiintare>5 Iulie 1994</infiintare>
+            <sediu>Seattle, Washington, Statele Unite</sediu>
+            <venit>386.1 miliarde USD</venit>
+            <angajati>1298000</angajati>
+        </informatii>
+    </companie>
+</companii>

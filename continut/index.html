@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/stil.css">
+        <script src="js/script.js"></script>
+        <script src="js/cumparaturi.js"></script>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body onload="schimbaContinut('acasa')">
+        <header>
+            <img src="imagini/header.jpg" alt="Header" id="header">
+        </header>
+        <nav>
+            
+            <a onclick="schimbaContinut('acasa')"> <i class="fa fa-home"></i> Acasă</a>
+            <a onclick="schimbaContinut('despre')"> <i class="fa fa-folder"></i> Despre</a>
+            <a onclick="schimbaContinut('inregistreaza')"> <i class="fa fa-user"></i> Înregistrează</a>
+            <a onclick="schimbaContinut('video')"> <i class="fa fa-file-movie-o"></i> Video</a>
+            <a onclick="schimbaContinut('desen')"> <i class="fa fa-paint-brush"></i> Desen</a>
+            <a onclick="schimbaContinut('invat','js/script.js','loadData')"> <i class="fa fa-edit"> </i>Învăț</a>
+            <a onclick="schimbaContinut('companii', 'js/companii.js', 'loadCompanies')"> <i class="fa fa-line-chart"></i> Companii</a>
+            <a onclick="schimbaContinut('verifica','js/utilizatori.js')"> <i class="fa fa-check-square-o"></i> Verifică</a>
+            <a onclick="schimbaContinut('cumparaturi', 'js/cumparaturi.js', 'loadTables')"> <i class="fa fa-cart-plus"></i> Cumpărături</a>
+
+        </nav>
+        
+        <main id="continut">
+
+        </main>
+
+        <footer>
+            <p>&copy; 2022 Trading România</p>
+        </footer>
+    </body>
+
+</html>

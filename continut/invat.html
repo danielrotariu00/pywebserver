@@ -1,0 +1,72 @@
+<aside>
+    <p>Accesează rapid</p>
+    <ol>
+        <li>
+            <a class="aside_link" href="#section_1">Informații</a>
+        </li>
+        <li>
+            <a class="aside_link" href="#section_2">Desenare</a>
+        </li>
+        <li>
+            <a class="aside_link" href="#section_3">Tabel</a>
+        </li>
+    </ol>
+</aside>
+
+<section id="section_1" class="section">
+    <h1>
+        Informații
+    </h1>
+    <p>Piața se deschide la ora 16:30</p>
+    <p>Browsere acceptate: Chrome, Opera, Firefox</p>
+    <p>Sisteme de operare acceptate: Windows, Linux, MacOS</p>
+    <p>Pentru a putea tranzacționa asigurați-vă ca nu vă aflați într-o țară restricționată.</p>
+    <p>Verificați dacă datele dumneavoastră corespund:</p>
+    <p></p>
+    <p id="data"></p>
+    <p id="URL"></p>
+    <p id="locatie"></p>
+    <p id="user_agent"></p>
+</section>
+
+<section id="section_2" class="section">
+    <h1>
+        Desenare
+    </h1>
+    <label for="border_color">Culoare contur:</label>
+    <input type="color" id="border_color">
+    <br>
+    <label for="fill_color">Culoare umplere:</label>
+    <input type="color" id="fill_color">
+    <br>
+    <canvas id="myCanvas" class="canvas_for_rectangle">
+
+    </canvas>
+</section>
+
+<section id="section_3" class="section">
+    <h1>
+        Tabel 
+    </h1>
+    <p></p>
+    <label for="index">Index: </label><input type="text" id="index">
+    <br>
+    <label for="cell_color">Culoare celulă: </label><input type="color" id="cell_color">
+    <br>
+    <button type="button" id="row_button" onclick="addRow()">Adaugă linie</button>
+    <button type="button" id="column_button" onclick="addColumn()">Adaugă coloană</button>
+    <br>
+    <br>
+    <table id="section_3_table" class="section_3_table">
+        <tr>
+            <td>Tesla</td>
+            <td>Amazon</td>
+            <td>Google</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>20</td>
+            <td>30</td>
+        </tr>
+    </table>
+</section>
